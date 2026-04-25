@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRCoder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>QRCoder</h1>
+        <p class="subtitle">Generá códigos QR para cualquier enlace</p>
+
+        <div class="input-group">
+            <input
+                type="url"
+                id="urlInput"
+                placeholder="https://..."
+                autocomplete="off"
+            >
+            <button id="generateBtn" type="button">Generar QR</button>
+        </div>
+
+        <div id="qrContainer">
+            <div id="qrWrapper"></div>
+            <button id="downloadBtn" type="button">Descargar PNG</button>
+        </div>
+
+        <footer class="footer">
+            Inspirado en <a href="https://flisol.info/FLISOL2026/Argentina/SierrasChicas" target="_blank" rel="noopener">FLISOL Sierras Chicas 2026</a>
+        </footer>
+    </main>
+
+    <script src="js/qrcode.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
